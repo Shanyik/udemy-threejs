@@ -14,3 +14,11 @@
 body {
     background-color: aliceblue;
 }
+
+#button {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    outline: none;
+    z-index: 1000;
+}

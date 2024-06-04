@@ -7,7 +7,12 @@
     <title>threejs</title>
 </head>
 <body>
-    <canvas class="draw"></canvas>
-    <script type="module" src="index.js"></script>
+    <button class="button" id="button1" onclick="navigateTo('http://localhost:5500/Section-1/cube.html')">Case 1</button>
+    <button class="button" id="button2" onclick="navigateTo('http://localhost:5500/Section-1/animations.html')">Case 2</button>
+    <script>
+        function navigateTo(url) {
+            window.location.href = url;
+        }
+    </script>
 </body>
 </html>
