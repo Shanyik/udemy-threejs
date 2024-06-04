@@ -6,8 +6,15 @@ const scene = new THREE.Scene();
 
 //Mesh
 
-const geometry = new THREE.BoxGeometry(1, 1, 1);
-const material = new THREE.MeshBasicMaterial({ color: "red" });
+//const geometry = new THREE.BoxGeometry(1, 1, 1, 2, 2, 2);
+const geometry = new THREE.BufferGeometry();
+const positions = new Float32Array([
+    0, 0, 0,
+    0, 1, 0,
+    1, 0, 0
+]);
+geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+const material = new THREE.MeshBasicMaterial({ color: "red" , wireframe: true});
 const mesh = new THREE.Mesh(geometry, material);
 
 scene.add(mesh);
@@ -37,7 +44,8 @@ const animate = () => {
 
     const timeElapsed = clock.getElapsedTime();
 
-    mesh.rotation.x = timeElapsed * Math.PI ;
+    mesh.rotation.x = timeElapsed;
+    mesh.rotation.y = timeElapsed;
 
     requestAnimationFrame(animate);
     renderer.render(scene, camera);
