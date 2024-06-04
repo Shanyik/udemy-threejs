@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.draw {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    outline: none;
+}
+
+body {
+    background-color: aliceblue;
+}
