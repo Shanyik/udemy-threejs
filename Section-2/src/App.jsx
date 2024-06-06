@@ -9,6 +9,7 @@ import Basics from './pages/Basics';
 import Loader from './pages/components/Loader';
 import ParticlesPage from './pages/ParticlesPage';
 import ModelPage from './pages/ModelPage';
+import Events from './pages/Events';
 
 function App() {
   return (
@@ -42,6 +43,11 @@ function App() {
               <Link to="/model">3d model</Link>
             </p>
           </ul>
+          <ul>
+            <p>
+              <Link to="/events">events</Link>
+            </p>
+          </ul>
         </nav>
       </div>
       <Routes>
@@ -52,6 +58,7 @@ function App() {
           element={<ParticlesPage />}
         />
         <Route path="/model" element={<ModelPage />} />
+        <Route path="/events" element={<Events />} />
       </Routes>
     </Router>
   );
