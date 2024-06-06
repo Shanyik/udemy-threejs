@@ -7,6 +7,7 @@ import {
 import './App.css';
 import Basics from './pages/Basics';
 import Loader from './pages/components/Loader';
+import ParticlesPage from './pages/ParticlesPage';
 
 function App() {
   return (
@@ -22,12 +23,17 @@ function App() {
         >
           <ul>
             <p>
-              <Link to="/basics">part 1</Link>
+              <Link to="/basics">basics</Link>
             </p>
           </ul>
           <ul>
             <p>
-              <Link to="/textureLoader">part 2</Link>
+              <Link to="/textureLoader">texture</Link>
+            </p>
+          </ul>
+          <ul>
+            <p>
+              <Link to="/particles">particles</Link>
             </p>
           </ul>
         </nav>
@@ -35,6 +41,10 @@ function App() {
       <Routes>
         <Route path="/basics" element={<Basics />} />
         <Route path="/textureLoader" element={<Loader />} />
+        <Route
+          path="/particles"
+          element={<ParticlesPage />}
+        />
       </Routes>
     </Router>
   );
