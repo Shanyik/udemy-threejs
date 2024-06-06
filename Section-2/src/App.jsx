@@ -8,6 +8,7 @@ import './App.css';
 import Basics from './pages/Basics';
 import Loader from './pages/components/Loader';
 import ParticlesPage from './pages/ParticlesPage';
+import ModelPage from './pages/ModelPage';
 
 function App() {
   return (
@@ -36,6 +37,11 @@ function App() {
               <Link to="/particles">particles</Link>
             </p>
           </ul>
+          <ul>
+            <p>
+              <Link to="/model">3d model</Link>
+            </p>
+          </ul>
         </nav>
       </div>
       <Routes>
@@ -45,6 +51,7 @@ function App() {
           path="/particles"
           element={<ParticlesPage />}
         />
+        <Route path="/model" element={<ModelPage />} />
       </Routes>
     </Router>
   );

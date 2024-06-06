@@ -8,7 +8,7 @@ const Particles = () => {
   const particles = useRef();
 
   useFrame((state, delta) => {
-    particles.current.rotation.y += delta * 0.08;
+    particles.current.rotation.y += delta * 0.02;
     particles.current.rotation.x += delta * 0.08;
   });
 
@@ -17,7 +17,7 @@ const Particles = () => {
     './img/alphaSnow.jpg',
   );
 
-  const verticesAmount = 6000;
+  const verticesAmount = 15000;
   const positionArray = new Float32Array(
     verticesAmount * 3,
   );
