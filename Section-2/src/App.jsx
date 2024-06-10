@@ -12,6 +12,7 @@ import ModelPage from './pages/ModelPage';
 import Events from './pages/Events';
 import EnvironmentPage from './pages/EnvironmentPage';
 import CameraPage from './pages/CameraPage';
+import ControlsPage from './pages/ControlsPage';
 
 function App() {
   return (
@@ -60,6 +61,11 @@ function App() {
               <Link to="/camera">camera</Link>
             </p>
           </ul>
+          <ul>
+            <p>
+              <Link to="/controls">controls</Link>
+            </p>
+          </ul>
         </nav>
       </div>
       <Routes>
@@ -73,6 +79,10 @@ function App() {
         <Route path="/events" element={<Events />} />
         <Route path="/env" element={<EnvironmentPage />} />
         <Route path="/camera" element={<CameraPage />} />
+        <Route
+          path="/controls"
+          element={<ControlsPage />}
+        />
       </Routes>
     </Router>
   );
