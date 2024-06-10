@@ -10,6 +10,7 @@ import Loader from './pages/components/Loader';
 import ParticlesPage from './pages/ParticlesPage';
 import ModelPage from './pages/ModelPage';
 import Events from './pages/Events';
+import EnvironmentPage from './pages/EnvironmentPage';
 
 function App() {
   return (
@@ -48,6 +49,11 @@ function App() {
               <Link to="/events">events</Link>
             </p>
           </ul>
+          <ul>
+            <p>
+              <Link to="/env">env</Link>
+            </p>
+          </ul>
         </nav>
       </div>
       <Routes>
@@ -59,6 +65,7 @@ function App() {
         />
         <Route path="/model" element={<ModelPage />} />
         <Route path="/events" element={<Events />} />
+        <Route path="/env" element={<EnvironmentPage />} />
       </Routes>
     </Router>
   );
