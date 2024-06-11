@@ -1,6 +1,6 @@
 import React from 'react';
 import { Canvas } from '@react-three/fiber';
-import TextComponent from '../components/TextComponent';
+import TextComponent from './components/TextComponent';
 
 const TextPage = () => {
   return (

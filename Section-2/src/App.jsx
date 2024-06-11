@@ -13,8 +13,8 @@ import Events from './pages/Events';
 import EnvironmentPage from './pages/EnvironmentPage';
 import CameraPage from './pages/CameraPage';
 import ControlsPage from './pages/ControlsPage';
-import TextComponent from './pages/components/TextComponent';
-import TextPage from './pages/controls/TextPage';
+import TextPage from './pages/TextPage';
+import AudioPage from './pages/AudioPage';
 
 function App() {
   return (
@@ -73,6 +73,11 @@ function App() {
               <Link to="/text">text</Link>
             </p>
           </ul>
+          <ul>
+            <p>
+              <Link to="/audio">audio</Link>
+            </p>
+          </ul>
         </nav>
       </div>
       <Routes>
@@ -91,6 +96,7 @@ function App() {
           element={<ControlsPage />}
         />
         <Route path="/text" element={<TextPage />} />
+        <Route path="/audio" element={<AudioPage />} />
       </Routes>
     </Router>
   );
