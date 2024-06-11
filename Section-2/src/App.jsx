@@ -16,6 +16,7 @@ import ControlsPage from './pages/ControlsPage';
 import TextPage from './pages/TextPage';
 import AudioPage from './pages/AudioPage';
 import ShaderPage from './pages/ShaderPage';
+import MeshPortalMaterialPage from './pages/MeshPortalMaterialPage';
 
 function App() {
   return (
@@ -84,6 +85,11 @@ function App() {
               <Link to="/shader">shader</Link>
             </p>
           </ul>
+          <ul>
+            <p>
+              <Link to="/mesh">meshportalmaterial</Link>
+            </p>
+          </ul>
         </nav>
       </div>
       <Routes>
@@ -104,6 +110,10 @@ function App() {
         <Route path="/text" element={<TextPage />} />
         <Route path="/audio" element={<AudioPage />} />
         <Route path="/shader" element={<ShaderPage />} />
+        <Route
+          path="/mesh"
+          element={<MeshPortalMaterialPage />}
+        />
       </Routes>
     </Router>
   );
