@@ -10,6 +10,13 @@ import Loader from './pages/components/Loader';
 import ParticlesPage from './pages/ParticlesPage';
 import ModelPage from './pages/ModelPage';
 import Events from './pages/Events';
+import EnvironmentPage from './pages/EnvironmentPage';
+import CameraPage from './pages/CameraPage';
+import ControlsPage from './pages/ControlsPage';
+import TextPage from './pages/TextPage';
+import AudioPage from './pages/AudioPage';
+import ShaderPage from './pages/ShaderPage';
+import MeshPortalMaterialPage from './pages/MeshPortalMaterialPage';
 
 function App() {
   return (
@@ -48,6 +55,41 @@ function App() {
               <Link to="/events">events</Link>
             </p>
           </ul>
+          <ul>
+            <p>
+              <Link to="/env">env</Link>
+            </p>
+          </ul>
+          <ul>
+            <p>
+              <Link to="/camera">camera</Link>
+            </p>
+          </ul>
+          <ul>
+            <p>
+              <Link to="/controls">controls</Link>
+            </p>
+          </ul>
+          <ul>
+            <p>
+              <Link to="/text">text</Link>
+            </p>
+          </ul>
+          <ul>
+            <p>
+              <Link to="/audio">audio</Link>
+            </p>
+          </ul>
+          <ul>
+            <p>
+              <Link to="/shader">shader</Link>
+            </p>
+          </ul>
+          <ul>
+            <p>
+              <Link to="/mesh">meshportalmaterial</Link>
+            </p>
+          </ul>
         </nav>
       </div>
       <Routes>
@@ -59,6 +101,19 @@ function App() {
         />
         <Route path="/model" element={<ModelPage />} />
         <Route path="/events" element={<Events />} />
+        <Route path="/env" element={<EnvironmentPage />} />
+        <Route path="/camera" element={<CameraPage />} />
+        <Route
+          path="/controls"
+          element={<ControlsPage />}
+        />
+        <Route path="/text" element={<TextPage />} />
+        <Route path="/audio" element={<AudioPage />} />
+        <Route path="/shader" element={<ShaderPage />} />
+        <Route
+          path="/mesh"
+          element={<MeshPortalMaterialPage />}
+        />
       </Routes>
     </Router>
   );
