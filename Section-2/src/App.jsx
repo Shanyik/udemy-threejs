@@ -15,6 +15,7 @@ import CameraPage from './pages/CameraPage';
 import ControlsPage from './pages/ControlsPage';
 import TextPage from './pages/TextPage';
 import AudioPage from './pages/AudioPage';
+import ShaderPage from './pages/ShaderPage';
 
 function App() {
   return (
@@ -78,6 +79,11 @@ function App() {
               <Link to="/audio">audio</Link>
             </p>
           </ul>
+          <ul>
+            <p>
+              <Link to="/shader">shader</Link>
+            </p>
+          </ul>
         </nav>
       </div>
       <Routes>
@@ -97,6 +103,7 @@ function App() {
         />
         <Route path="/text" element={<TextPage />} />
         <Route path="/audio" element={<AudioPage />} />
+        <Route path="/shader" element={<ShaderPage />} />
       </Routes>
     </Router>
   );
