@@ -21,6 +21,7 @@ import SpringPage from './pages/SpringPage';
 import ImperativeAPI from './pages/ImperativeAPI';
 import PropsPage from './pages/PropsPage';
 import SpringRefPage from './pages/SpringRefPage';
+import UseSprings from './pages/UseSprings';
 
 function App() {
   return (
@@ -116,6 +117,11 @@ function App() {
               <Link to="/springref">springref</Link>
             </p>
           </ul>
+          <ul>
+            <p>
+              <Link to="/usesprings">usesprings</Link>
+            </p>
+          </ul>
         </nav>
       </div>
       <Routes>
@@ -149,6 +155,10 @@ function App() {
         <Route
           path="/springref"
           element={<SpringRefPage />}
+        />
+        <Route
+          path="/usesprings"
+          element={<UseSprings />}
         />
       </Routes>
     </Router>
