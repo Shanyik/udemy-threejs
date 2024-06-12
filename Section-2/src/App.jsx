@@ -22,6 +22,7 @@ import ImperativeAPI from './pages/ImperativeAPI';
 import PropsPage from './pages/PropsPage';
 import SpringRefPage from './pages/SpringRefPage';
 import UseSprings from './pages/UseSprings';
+import TrailPage from './pages/TrailPage';
 
 function App() {
   return (
@@ -122,6 +123,11 @@ function App() {
               <Link to="/usesprings">usesprings</Link>
             </p>
           </ul>
+          <ul>
+            <p>
+              <Link to="/trail">trail</Link>
+            </p>
+          </ul>
         </nav>
       </div>
       <Routes>
@@ -160,6 +166,7 @@ function App() {
           path="/usesprings"
           element={<UseSprings />}
         />
+        <Route path="/trail" element={<TrailPage />} />
       </Routes>
     </Router>
   );
