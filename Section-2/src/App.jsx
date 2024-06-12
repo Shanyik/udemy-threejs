@@ -17,6 +17,12 @@ import TextPage from './pages/TextPage';
 import AudioPage from './pages/AudioPage';
 import ShaderPage from './pages/ShaderPage';
 import MeshPortalMaterialPage from './pages/MeshPortalMaterialPage';
+import SpringPage from './pages/SpringPage';
+import ImperativeAPI from './pages/ImperativeAPI';
+import PropsPage from './pages/PropsPage';
+import SpringRefPage from './pages/SpringRefPage';
+import UseSprings from './pages/UseSprings';
+import TrailPage from './pages/TrailPage';
 
 function App() {
   return (
@@ -90,6 +96,38 @@ function App() {
               <Link to="/mesh">meshportalmaterial</Link>
             </p>
           </ul>
+          <ul>
+            <p>
+              <Link to="/spring">spring</Link>
+            </p>
+          </ul>
+          <ul>
+            <p>
+              <Link to="/imperative-API">
+                imperative-API
+              </Link>
+            </p>
+          </ul>
+          <ul>
+            <p>
+              <Link to="/props">props</Link>
+            </p>
+          </ul>
+          <ul>
+            <p>
+              <Link to="/springref">springref</Link>
+            </p>
+          </ul>
+          <ul>
+            <p>
+              <Link to="/usesprings">usesprings</Link>
+            </p>
+          </ul>
+          <ul>
+            <p>
+              <Link to="/trail">trail</Link>
+            </p>
+          </ul>
         </nav>
       </div>
       <Routes>
@@ -114,6 +152,21 @@ function App() {
           path="/mesh"
           element={<MeshPortalMaterialPage />}
         />
+        <Route path="/spring" element={<SpringPage />} />
+        <Route
+          path="/imperative-API"
+          element={<ImperativeAPI />}
+        />
+        <Route path="/props" element={<PropsPage />} />
+        <Route
+          path="/springref"
+          element={<SpringRefPage />}
+        />
+        <Route
+          path="/usesprings"
+          element={<UseSprings />}
+        />
+        <Route path="/trail" element={<TrailPage />} />
       </Routes>
     </Router>
   );
