@@ -20,6 +20,7 @@ import MeshPortalMaterialPage from './pages/MeshPortalMaterialPage';
 import SpringPage from './pages/SpringPage';
 import ImperativeAPI from './pages/ImperativeAPI';
 import PropsPage from './pages/PropsPage';
+import SpringRefPage from './pages/SpringRefPage';
 
 function App() {
   return (
@@ -110,6 +111,11 @@ function App() {
               <Link to="/props">props</Link>
             </p>
           </ul>
+          <ul>
+            <p>
+              <Link to="/springref">springref</Link>
+            </p>
+          </ul>
         </nav>
       </div>
       <Routes>
@@ -140,6 +146,10 @@ function App() {
           element={<ImperativeAPI />}
         />
         <Route path="/props" element={<PropsPage />} />
+        <Route
+          path="/springref"
+          element={<SpringRefPage />}
+        />
       </Routes>
     </Router>
   );
