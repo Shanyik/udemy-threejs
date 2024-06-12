@@ -19,6 +19,7 @@ import ShaderPage from './pages/ShaderPage';
 import MeshPortalMaterialPage from './pages/MeshPortalMaterialPage';
 import SpringPage from './pages/SpringPage';
 import ImperativeAPI from './pages/ImperativeAPI';
+import PropsPage from './pages/PropsPage';
 
 function App() {
   return (
@@ -104,6 +105,11 @@ function App() {
               </Link>
             </p>
           </ul>
+          <ul>
+            <p>
+              <Link to="/props">props</Link>
+            </p>
+          </ul>
         </nav>
       </div>
       <Routes>
@@ -133,6 +139,7 @@ function App() {
           path="/imperative-API"
           element={<ImperativeAPI />}
         />
+        <Route path="/props" element={<PropsPage />} />
       </Routes>
     </Router>
   );
