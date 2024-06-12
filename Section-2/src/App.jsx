@@ -18,6 +18,7 @@ import AudioPage from './pages/AudioPage';
 import ShaderPage from './pages/ShaderPage';
 import MeshPortalMaterialPage from './pages/MeshPortalMaterialPage';
 import SpringPage from './pages/SpringPage';
+import ImperativeAPI from './pages/ImperativeAPI';
 
 function App() {
   return (
@@ -96,6 +97,13 @@ function App() {
               <Link to="/spring">spring</Link>
             </p>
           </ul>
+          <ul>
+            <p>
+              <Link to="/imperative-API">
+                imperative-API
+              </Link>
+            </p>
+          </ul>
         </nav>
       </div>
       <Routes>
@@ -121,6 +129,10 @@ function App() {
           element={<MeshPortalMaterialPage />}
         />
         <Route path="/spring" element={<SpringPage />} />
+        <Route
+          path="/imperative-API"
+          element={<ImperativeAPI />}
+        />
       </Routes>
     </Router>
   );
