@@ -27,6 +27,7 @@ import Physics from './pages/Physics';
 import CollidersPage from './pages/CollidersPage';
 import RigidBodyMethodsPage from './pages/RigidBodyMethodsPage';
 import TypesPage from './pages/TypesPage';
+import InstancedMeshPage from './pages/InstancedMeshPage';
 
 function App() {
   return (
@@ -152,6 +153,11 @@ function App() {
               <Link to="/types">types</Link>
             </p>
           </ul>
+          <ul>
+            <p>
+              <Link to="/instancedmesh">instancedmesh</Link>
+            </p>
+          </ul>
         </nav>
       </div>
       <Routes>
@@ -201,6 +207,10 @@ function App() {
           element={<RigidBodyMethodsPage />}
         />
         <Route path="/types" element={<TypesPage />} />
+        <Route
+          path="/instancedmesh"
+          element={<InstancedMeshPage />}
+        />
       </Routes>
     </Router>
   );
