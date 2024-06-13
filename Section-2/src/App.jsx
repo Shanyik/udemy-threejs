@@ -24,6 +24,7 @@ import SpringRefPage from './pages/SpringRefPage';
 import UseSprings from './pages/UseSprings';
 import TrailPage from './pages/TrailPage';
 import Physics from './pages/Physics';
+import CollidersPage from './pages/CollidersPage';
 
 function App() {
   return (
@@ -134,6 +135,11 @@ function App() {
               <Link to="/physics">physics</Link>
             </p>
           </ul>
+          <ul>
+            <p>
+              <Link to="/colliders">colliders</Link>
+            </p>
+          </ul>
         </nav>
       </div>
       <Routes>
@@ -174,6 +180,10 @@ function App() {
         />
         <Route path="/trail" element={<TrailPage />} />
         <Route path="/physics" element={<Physics />} />
+        <Route
+          path="/colliders"
+          element={<CollidersPage />}
+        />
       </Routes>
     </Router>
   );
