@@ -23,6 +23,7 @@ import PropsPage from './pages/PropsPage';
 import SpringRefPage from './pages/SpringRefPage';
 import UseSprings from './pages/UseSprings';
 import TrailPage from './pages/TrailPage';
+import Physics from './pages/Physics';
 
 function App() {
   return (
@@ -128,6 +129,11 @@ function App() {
               <Link to="/trail">trail</Link>
             </p>
           </ul>
+          <ul>
+            <p>
+              <Link to="/physics">physics</Link>
+            </p>
+          </ul>
         </nav>
       </div>
       <Routes>
@@ -167,6 +173,7 @@ function App() {
           element={<UseSprings />}
         />
         <Route path="/trail" element={<TrailPage />} />
+        <Route path="/physics" element={<Physics />} />
       </Routes>
     </Router>
   );
