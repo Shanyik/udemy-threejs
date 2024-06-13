@@ -28,6 +28,7 @@ import CollidersPage from './pages/CollidersPage';
 import RigidBodyMethodsPage from './pages/RigidBodyMethodsPage';
 import TypesPage from './pages/TypesPage';
 import InstancedMeshPage from './pages/InstancedMeshPage';
+import SensorPage from './pages/SensorPage';
 
 function App() {
   return (
@@ -158,6 +159,11 @@ function App() {
               <Link to="/instancedmesh">instancedmesh</Link>
             </p>
           </ul>
+          <ul>
+            <p>
+              <Link to="/sensor">sensor</Link>
+            </p>
+          </ul>
         </nav>
       </div>
       <Routes>
@@ -211,6 +217,7 @@ function App() {
           path="/instancedmesh"
           element={<InstancedMeshPage />}
         />
+        <Route path="/sensor" element={<SensorPage />} />
       </Routes>
     </Router>
   );
