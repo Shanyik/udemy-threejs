@@ -29,6 +29,7 @@ import RigidBodyMethodsPage from './pages/RigidBodyMethodsPage';
 import TypesPage from './pages/TypesPage';
 import InstancedMeshPage from './pages/InstancedMeshPage';
 import SensorPage from './pages/SensorPage';
+import PostProcessPage from './pages/PostProcessPage';
 
 function App() {
   return (
@@ -164,6 +165,11 @@ function App() {
               <Link to="/sensor">sensor</Link>
             </p>
           </ul>
+          <ul>
+            <p>
+              <Link to="/pp">postprocessing</Link>
+            </p>
+          </ul>
         </nav>
       </div>
       <Routes>
@@ -218,6 +224,7 @@ function App() {
           element={<InstancedMeshPage />}
         />
         <Route path="/sensor" element={<SensorPage />} />
+        <Route path="/pp" element={<PostProcessPage />} />
       </Routes>
     </Router>
   );
