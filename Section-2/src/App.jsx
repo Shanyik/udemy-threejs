@@ -26,6 +26,7 @@ import TrailPage from './pages/TrailPage';
 import Physics from './pages/Physics';
 import CollidersPage from './pages/CollidersPage';
 import RigidBodyMethodsPage from './pages/RigidBodyMethodsPage';
+import TypesPage from './pages/TypesPage';
 
 function App() {
   return (
@@ -146,6 +147,11 @@ function App() {
               <Link to="/rigid">rigid</Link>
             </p>
           </ul>
+          <ul>
+            <p>
+              <Link to="/types">types</Link>
+            </p>
+          </ul>
         </nav>
       </div>
       <Routes>
@@ -194,6 +200,7 @@ function App() {
           path="/rigid"
           element={<RigidBodyMethodsPage />}
         />
+        <Route path="/types" element={<TypesPage />} />
       </Routes>
     </Router>
   );
