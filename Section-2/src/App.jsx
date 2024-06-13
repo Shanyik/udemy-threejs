@@ -23,6 +23,12 @@ import PropsPage from './pages/PropsPage';
 import SpringRefPage from './pages/SpringRefPage';
 import UseSprings from './pages/UseSprings';
 import TrailPage from './pages/TrailPage';
+import Physics from './pages/Physics';
+import CollidersPage from './pages/CollidersPage';
+import RigidBodyMethodsPage from './pages/RigidBodyMethodsPage';
+import TypesPage from './pages/TypesPage';
+import InstancedMeshPage from './pages/InstancedMeshPage';
+import SensorPage from './pages/SensorPage';
 
 function App() {
   return (
@@ -128,6 +134,36 @@ function App() {
               <Link to="/trail">trail</Link>
             </p>
           </ul>
+          <ul>
+            <p>
+              <Link to="/physics">physics</Link>
+            </p>
+          </ul>
+          <ul>
+            <p>
+              <Link to="/colliders">colliders</Link>
+            </p>
+          </ul>
+          <ul>
+            <p>
+              <Link to="/rigid">rigid</Link>
+            </p>
+          </ul>
+          <ul>
+            <p>
+              <Link to="/types">types</Link>
+            </p>
+          </ul>
+          <ul>
+            <p>
+              <Link to="/instancedmesh">instancedmesh</Link>
+            </p>
+          </ul>
+          <ul>
+            <p>
+              <Link to="/sensor">sensor</Link>
+            </p>
+          </ul>
         </nav>
       </div>
       <Routes>
@@ -167,6 +203,21 @@ function App() {
           element={<UseSprings />}
         />
         <Route path="/trail" element={<TrailPage />} />
+        <Route path="/physics" element={<Physics />} />
+        <Route
+          path="/colliders"
+          element={<CollidersPage />}
+        />
+        <Route
+          path="/rigid"
+          element={<RigidBodyMethodsPage />}
+        />
+        <Route path="/types" element={<TypesPage />} />
+        <Route
+          path="/instancedmesh"
+          element={<InstancedMeshPage />}
+        />
+        <Route path="/sensor" element={<SensorPage />} />
       </Routes>
     </Router>
   );
