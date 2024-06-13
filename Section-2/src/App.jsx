@@ -25,6 +25,7 @@ import UseSprings from './pages/UseSprings';
 import TrailPage from './pages/TrailPage';
 import Physics from './pages/Physics';
 import CollidersPage from './pages/CollidersPage';
+import RigidBodyMethodsPage from './pages/RigidBodyMethodsPage';
 
 function App() {
   return (
@@ -140,6 +141,11 @@ function App() {
               <Link to="/colliders">colliders</Link>
             </p>
           </ul>
+          <ul>
+            <p>
+              <Link to="/rigid">rigid</Link>
+            </p>
+          </ul>
         </nav>
       </div>
       <Routes>
@@ -183,6 +189,10 @@ function App() {
         <Route
           path="/colliders"
           element={<CollidersPage />}
+        />
+        <Route
+          path="/rigid"
+          element={<RigidBodyMethodsPage />}
         />
       </Routes>
     </Router>
